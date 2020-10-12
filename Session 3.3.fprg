@@ -1,0 +1,36 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="chung"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2020-10-11 09:37:05 PM"/>
+        <attribute name="created" value="Y2h1bmc7TEFQVE9QLUlCNDNOTU9SOzIwMjAtMTAtMTE7MDg6Mzk6MzUgUE07Mjg3OQ=="/>
+        <attribute name="edited" value="Y2h1bmc7TEFQVE9QLUlCNDNOTU9SOzIwMjAtMTAtMTE7MDk6Mzc6MDUgUE07OTsyOTkx"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <output expression="&quot;How many items are you buying?&quot;" newline="True"/>
+            <declare name="qty" type="Integer" array="False" size=""/>
+            <input variable="qty"/>
+            <output expression="&quot;What is the price per item?&quot;" newline="True"/>
+            <declare name="price" type="Integer" array="False" size=""/>
+            <input variable="price"/>
+            <declare name="totCost" type="Integer" array="False" size=""/>
+            <assign variable="totCost" expression="price * qty"/>
+            <declare name="finalPrice" type="Integer" array="False" size=""/>
+            <assign variable="finalPrice" expression="getfinalPrice(totCost)"/>
+            <output expression="&quot;Your total purchased qty is &quot; &amp;qty&amp; &quot; the final price of your purchase is &quot; &amp;finalPrice" newline="True"/>
+        </body>
+    </function>
+    <function name="getfinalPrice" type="Integer" variable="finalPrice">
+        <parameters>
+            <parameter name="totCost" type="Integer" array="False"/>
+        </parameters>
+        <body>
+            <declare name="finalPrice" type="Integer" array="False" size=""/>
+            <assign variable="finalPrice" expression="totCost + totCost * 0.07"/>
+        </body>
+    </function>
+</flowgorithm>

@@ -1,0 +1,18 @@
+int qty
+int price
+int totalcost
+int finalPrice
+
+display("what is your total qty?")
+input (qty)
+
+display ("what is the unit price of your purchase?")
+input (price)
+
+totalcost= qty * price
+
+finalPrice=totalcost + totalcost*0.07
+
+display ("Your totla purchasing qty is " &qty& " and the total price is "&finalPrice)
+
+

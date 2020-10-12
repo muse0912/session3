@@ -1,0 +1,35 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="chung"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2020-10-11 08:38:51 PM"/>
+        <attribute name="created" value="Y2h1bmc7TEFQVE9QLUlCNDNOTU9SOzIwMjAtMTAtMTE7MDg6MzA6MjQgUE07Mjg2OA=="/>
+        <attribute name="edited" value="Y2h1bmc7TEFQVE9QLUlCNDNOTU9SOzIwMjAtMTAtMTE7MDg6Mzg6NTEgUE07MTsyOTg0"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="name" type="String" array="False" size=""/>
+            <assign variable="name" expression="GetName()"/>
+            <call expression="DisplayHello(name)"/>
+        </body>
+    </function>
+    <function name="DisplayHello" type="None" variable="">
+        <parameters>
+            <parameter name="name" type="String" array="False"/>
+        </parameters>
+        <body>
+            <output expression="&quot;Hello &quot;&amp;name &amp; &quot;!&quot;" newline="True"/>
+        </body>
+    </function>
+    <function name="GetName" type="String" variable="name">
+        <parameters/>
+        <body>
+            <declare name="name" type="String" array="False" size=""/>
+            <output expression="&quot;What is your name?&quot;" newline="True"/>
+            <input variable="name"/>
+        </body>
+    </function>
+</flowgorithm>
